@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="estilos/index.css">
         <script src="scripts/data.js" defer></script>
+        <script src= "scripts/curso.js" defer></script>
 
         <!--Links fontes-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +19,8 @@
     </head>
     <body>
         <header>
-            <img src="imagens/logo.png" alt="Logo do Site">
-            <span>Nome do WebSite</span>
+            <img src="imagens/logo_conecta_sp.jfif" alt="Logo do Site">
+            <span>Conecta SP</span>
             <nav>
                 <ul>
                     <li><a href="#">Página Inicial</a></li>
@@ -61,31 +62,27 @@
                 <h2>Curso de Certificado Web</h2>
 
                 <div class="categorias">
-                    <button>Todos</button>
-                    <button>CSE</button>
-                    <button>WDD</button>
+                    <button id="todos">Todos os Cursos</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
                 </div>
+                
+                <p id="total-creditos" class="total-creditos"></p>
 
-                <div class="lista-cursos">
+                <div class= "lista-cursos" id="lista-cursos"></div>
 
-                    <div class="curso">WDD 130</div>
-                    <div class="curso">WDD 131</div>
-                    <div class="curso">WDD 231</div>
-
-                </div>
-
-                <p class="total-creditos">
-                    O total de créditos para os cursos listados acima é 6
-                </p>
-
+                <p id="creditos-concluidos" class="creditos-concluidos"></p>
+               
+                
             </section>
+            
         </main>
         <footer>
 
             <div class="logos">
-                <img src="#" alt="linkedln">
-                <img src="#" alt="GitHub">
-                <img src="#" alt="Instagram">
+                <a href="www.linkedin.com/in/ricardo-leonel-6627632a4"><img src="imagens/linkedin.svg" alt="linkedln"></a>
+                <a href="https://github.com/ricardoleonelbpn/wdd231/"><img src="imagens/github.svg" alt="GitHub"></a>
+                <a href="https://www.instagram.com"><img src="imagens/instagram.svg" alt="Instagram"></a>
             </div>
             <p>
                 © <span id="anoatual"></span> 🍀 Ricardo Leonel 🍀 São Paulo

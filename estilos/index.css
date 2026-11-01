@@ -23,7 +23,7 @@ header img {
 
 header span {
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 20px;
 }
 
@@ -178,4 +178,40 @@ footer {
         flex-direction: column;
     }
 
+}
+
+.lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.curso {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e5e5e5;
+    color: #222;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.curso.concluido {
+    background-color: #d9ead3;
+    border-color: #38761d;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.creditos-concluidos {
+    text-align: center;
 }
