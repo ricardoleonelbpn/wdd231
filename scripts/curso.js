@@ -9,7 +9,7 @@ const cursos = [
         tecnologia: [
             'Python'
         ],
-        concluo: falso
+        concluo: true
     },
     {
         assunto: 'WDD',
@@ -22,7 +22,7 @@ const cursos = [
             'HTML',
             'CSS'
         ],
-        concluo: falso
+        concluo: true
     },
     {
         assunto: 'CSE',
@@ -34,7 +34,7 @@ const cursos = [
         tecnologia: [
             'Python'
         ],
-        concluo: falso
+        concluo: true
     },
     {
         assunto: 'CSE',
