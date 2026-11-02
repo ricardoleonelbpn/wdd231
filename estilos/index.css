@@ -109,7 +109,6 @@ h2 {
     text-align: center;
     padding: 5px;
 }
-
 /* CURSOS */
 
 .cursos {
@@ -131,21 +130,41 @@ h2 {
 
 .lista-cursos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .curso {
-    background-color: #ddd;
+    background-color: #e5e5e5;
+    color: #222;
     text-align: center;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid transparent;
 }
 
-.total-creditos {
+.curso.concluido {
+    background-color: #d9ead3;
+    border-color: #38761d;
+}
+
+.total-creditos,
+.creditos-concluidos {
     text-align: center;
     font-size: 12px;
     margin-top: 10px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* RODAPÉ */
@@ -178,40 +197,4 @@ footer {
         flex-direction: column;
     }
 
-}
-
-.lista-cursos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.curso {
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #e5e5e5;
-    color: #222;
-    text-align: center;
-    border: 2px solid transparent;
-}
-
-.curso.concluido {
-    background-color: #d9ead3;
-    border-color: #38761d;
-}
-
-.filtros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.filtros button {
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-.creditos-concluidos {
-    text-align: center;
 }
